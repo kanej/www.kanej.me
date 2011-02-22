@@ -1,0 +1,37 @@
+
+div.intro {
+  padding-top: 50px;
+}
+
+div.intro p {
+  font-family: 'Geo', serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  text-shadow: none;
+  text-decoration: none;
+  text-transform: none;
+  letter-spacing: -0.026em;
+  word-spacing: -0.097em;
+  line-height: 0.82;
+  text-align: center;
+}
+
+.intro div.small p {
+  font-size: 18px;
+  margin-bottom: 20px;
+} 
+
+.footer p {
+  font-size: 14px;
+  font-style: italic;
+  text-align: center;
+}
+
+#link-panel {
+  /* background: Red; */
+  height: 100px;
+  width: 100px ;
+  margin-left: auto ;
+  margin-right: auto ;
+}
