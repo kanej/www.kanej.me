@@ -1,2 +1,6 @@
-*.swp
-.livereload
+out/
+target/
+logs/
+.lein-repl-history
+.lein-failures
+.DS_Store

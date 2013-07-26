@@ -1,0 +1,38 @@
+<!--
+ The Pedestal application development tools provide a very simple
+ system for composing documents. This partial will be included
+ "within" the application.html file. The div with id "content" in that
+ file will be replaced with the div with id "content" in this file.
+
+ This feature is only part of the tool. It has nothing to do with the
+ ClojureScript application that you are building.
+-->
+<_within file="application.html">
+  
+  <div id="content">
+
+    <div template="intro" field="id:id">
+
+      <div id="prog-blurb" class="blurb row">
+        <p class="lead">Hello, I'm John Kane</p>
+        <p class="lead">A programmer living in the wilds of North Devon, England</p>
+      </div>
+
+      <div id="icon-group-wrapper">
+        <div class="row">
+            <div class="big-icon span2 offset1" id="github-icon"></div>
+            <div class="big-icon span2 offset1" id="twitter-icon"></div>
+            <div class="big-icon span2 offset1" id="linkedin-icon"></div>
+        </div>
+      </div>
+    </div>
+
+    <div template="icon-panel" class="big-icon span2 offset1" field="id:id"></div>
+
+    <script src="/raphael.js"></script>
+    <script src="/game.js"></script>
+    <script id="script-driver" src="/game-driver.js"></script>
+
+  </div>
+
+</_within>

@@ -1,0 +1,15 @@
+/* CSS for kanej.me */
+
+body {
+  background: #333;
+  color: #FFF;
+}
+
+#content {
+  margin-top: 30px;
+}
+
+.blurb p {
+  text-align: center;
+  color: #AAA;
+}
