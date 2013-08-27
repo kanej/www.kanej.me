@@ -4,3 +4,4 @@ logs/
 .lein-repl-history
 .lein-failures
 .DS_Store
+profiles.clj

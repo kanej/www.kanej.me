@@ -6,7 +6,8 @@
                  [ch.qos.logback/logback-classic "1.0.7" :exclusions [org.slf4j/slf4j-api]]
                  [io.pedestal/pedestal.app "0.1.10"]
                  [io.pedestal/pedestal.app-tools "0.1.10"]]
-  :profiles {:dev {:source-paths ["dev"]}}
+  :profiles {:dev {:source-paths ["dev"]
+                   :plugins [[lein-s3-sync "0.1.0"]]}}
   :min-lein-version "2.0.0"
   :source-paths ["app/src" "app/templates"]
   :resource-paths ["config"]
