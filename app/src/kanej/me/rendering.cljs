@@ -22,11 +22,11 @@
   (let [key (-> path last name)
         parent (render/get-parent-id renderer path)
         id (render/new-id! renderer path (str key "-icon"))]
-    (dom/append! (dom/by-id parent) (str "<div class=\"big-icon span2 offset1\" id=\"" id "\"></div>"))))
+    (dom/append! (dom/by-id parent) (str "<div class=\"big-icon col-md-2 col-md-offset-1\" id=\"" id "\"></div>"))))
 
 (defn render-icon [renderer [_ path _ new-value] transmitter]
   (when new-value
-    (.create js/icons 
+    (.create js/icons
              (str (:name new-value) "-icon")
              (aget js/icons.paths (:name new-value))
              (:link new-value))))
@@ -34,8 +34,8 @@
 (defn render-config []
   [[:node-create    [:main] render-page]
    [:node-destroy   [:main] d/default-exit]
-   [:node-create    [:main :icons] render-icon-group] 
-   [:node-destroy   [:main :icons] d/default-exit] 
+   [:node-create    [:main :icons] render-icon-group]
+   [:node-destroy   [:main :icons] d/default-exit]
    [:node-create    [:main :icons :*] render-icon-panel]
-   [:node-destroy   [:main :icons :*] d/default-exit] 
+   [:node-destroy   [:main :icons :*] d/default-exit]
    [:value [:main :icons :*] render-icon]])
