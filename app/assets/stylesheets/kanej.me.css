@@ -3,6 +3,7 @@
 body {
   background: #333;
   color: #FFF;
+  margin-bottom: 60px;
 }
 
 #content {
@@ -13,4 +14,8 @@ body {
   margin-top: 30px;
   text-align: center;
   color: #AAA;
+}
+
+.big-icon svg {
+  cursor: pointer;
 }
