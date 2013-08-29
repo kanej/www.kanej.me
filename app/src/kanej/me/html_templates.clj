@@ -14,6 +14,10 @@
   ;; The last argument to 'dtfn' is a set of fields that should be
   ;; treated as static fields (may only be set once). Dynamic templates
   ;; use ids to set values so you cannot dynamically set an id.
-  {:kanej.me-page (dtfn (tnodes "kanej.me.html" "intro" [[:#icon-group-wrapper]]) #{:id})})
+  {:kanej.me-navbar   (dtfn (tnodes "kanej.me.html" "navbar") #{:id})
+   :kanej.me-intro    (dtfn (tnodes "kanej.me.html" "intro" [[:#icon-group-wrapper]]) #{:id})
+   :kanej.me-projects (dtfn (tnodes "kanej.me.html" "projects") #{:id})
+   :kanej.me-about    (dtfn (tnodes "kanej.me.html" "about") #{:id})
+   :kanej.me-footer   (dtfn (tnodes "kanej.me.html" "footer") #{:id})})
 
 ;; Note: this file will not be reloaded automatically when it is changed.

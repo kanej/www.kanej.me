@@ -12,28 +12,33 @@
     <div id="content">
 
 
-        <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
 
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Kanej</a>
-            </div>
+        <div template="navbar" field="id:id">
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="#intro">Home</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#about">About</a></li>
-                </ul>
+            <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
 
-            </div>
-        </nav>
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Kanej</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#intro">Home</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+
+                </div>
+            </nav>
+
+        </div>
 
 
         <div template="intro" field="id:id">
@@ -75,24 +80,32 @@
 
         </div>
 
-        <div id="about">
+        <div template="about" field="id:id">
 
-            <div class="page-header">
-                <h1>About <small>self-reflection</small></h1>
+            <div id="about">
+
+                <div class="page-header">
+                    <h1>About <small>self-reflection</small></h1>
+                </div>
+
+                <p class="lead">
+                    I'm <strong>John</strong>, my passions are programming, tea, folk music,
+                    the odd dram and a <a href="http://www.shelfari.com/johnkane84/shelf">good book</a>.
+                <p>
             </div>
 
-            <p class="lead">
-                I'm <strong>John</strong>, my passions are programming, tea, folk music,
-                the odd dram and a <a href="http://www.shelfari.com/johnkane84/shelf">good book</a>.
-            <p>
         </div>
 
-        <footer>
-            <nav class="navbar navbar-fixed-bottom" role="navigation" style="background: #222222;">
-                <p class="text-muted" style="text-align: center; margin-top: 15px;">Built in <strong>Devon</strong>, from <strong>Cream Teas</strong></p>
-                <!-- <img src="/devon.png" alt="Devon" class="img-circle" style="width:70px; border: 5px;"/> -->
-            </nav>
-        </footer>
+        <div template="footer" field="id:id">
+
+            <footer>
+                <nav class="navbar navbar-fixed-bottom" role="navigation" style="background: #222222;">
+                    <p class="text-muted" style="text-align: center; margin-top: 15px;">Built in <strong>Devon</strong>, from <strong>Cream Teas</strong></p>
+                    <!-- <img src="/devon.png" alt="Devon" class="img-circle" style="width:70px; border: 5px;"/> -->
+                </nav>
+            </footer>
+
+        </div>
 
 
         <div template="icon-panel" class="big-icon col-md-2 col-md-offset-1" field="id:id"></div>

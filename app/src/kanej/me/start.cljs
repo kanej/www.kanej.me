@@ -10,7 +10,7 @@
 ;; In this namespace, the application is built and started.
 
 (defn create-app [render-config]
-  (let [app (app/build behavior/example-app)
+  (let [app (app/build behavior/kanej-app)
         render-fn (push-render/renderer "content" render-config render/log-fn)
         app-model (render/consume-app-model app render-fn)]
     ;; If services existed, configure the application to send all

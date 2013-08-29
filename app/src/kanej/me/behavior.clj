@@ -12,7 +12,7 @@
 (defn init-main [_]
   [:transform-enable [:main :icons] :add-icon [{msg/topic [:icons]}]])
 
-(def example-app
+(def kanej-app
   {:version 2
    :transform [[:add-icon [:icons :*] add-icon-transform]]
    :emit [{:init init-main}
