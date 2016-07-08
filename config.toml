@@ -1,34 +1,26 @@
 baseurl = "http://www.kanej.me"
+googleAnalytics = "UA-21599577-2"
 languageCode = "en-us"
 theme = "hugo-identity-theme"
 title = "Kanej"
-
-googleAnalytics = "UA-21599577-2"
-
 [params]
-        favicon = "favicon.png"
-
-        name = "John Kane"
-        position = "Programmer"
-        email = "john@kanej.me"
-
-        background = "bg3.jpg"
-        avatar = "teadrinker.jpg"
-
-[[params.social]]
-        title = "Twitter"
-        icon = "fa-twitter"
-        link = "https://twitter.com/john_kane"
-
-[[params.social]]
-        title = "Github"
-        icon = "fa-github"
-        link = "https://github.com/kanej"
-
-[[params.social]]
-        title = "Linkedin"
-        icon = "fa-linkedin"
-        link = "https://www.linkedin.com/in/johnkane84"
-
+avatar = "teadrinker.jpg"
+background = "bg3.jpg"
+email = "john@kanej.me"
+favicon = "favicon.png"
+name = "John Kane"
+position = "Programmer"
 [params.footer]
-        copyright = "2016 John Kane"
+copyright = "2016 John Kane"
+[[params.social]]
+icon = "fa-twitter"
+link = "https://twitter.com/john_kane"
+title = "Twitter"
+[[params.social]]
+icon = "fa-github"
+link = "https://github.com/kanej"
+title = "Github"
+[[params.social]]
+icon = "fa-linkedin"
+link = "https://www.linkedin.com/in/johnkane84"
+title = "Linkedin"
