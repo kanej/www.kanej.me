@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/kanej
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://www.kanej.me
+  * I am kanej (https://keybase.io/kanej) on keybase.
+  * I have a public key with fingerprint CDDA E931 3B63 F402 383B  3CEA 3931 0DD5 63A6 3A66
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01018a5d79977e81fd8e07daa2d001380a40c69e6055b153e63b5249c81a77f1af200a",
+            "fingerprint": "cddae9313b63f402383b3cea39310dd563a63a66",
+            "host": "keybase.io",
+            "key_id": "39310dd563a63a66",
+            "kid": "01018a5d79977e81fd8e07daa2d001380a40c69e6055b153e63b5249c81a77f1af200a",
+            "uid": "8edc410e7e62bee8fb95d028e7132919",
+            "username": "kanej"
+        },
+        "service": {
+            "hostname": "www.kanej.me",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1474124463,
+    "expire_in": 157680000,
+    "prev": "7b050ff091f3ae7cc383eebdc2fb958de6b69ed5339ac8913a325f0a905f311d",
+    "seqno": 17,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.56
+Comment: https://keybase.io/crypto
+
+yMIjAnicrVJbSBVBGD4nS1GLihTUiGjNgjrozM7OXnzoXlJB9SAlUW2zO7PH1ePu
+6ZxVO6lJ0P1iFFYURWR0gahe6sEHU7NIDSV7iC4IkQhRqFRSFGHNHuqtx4aB4f//
+7/vm+3/+R9NSAhnB43NH8dqUdY3Bp53N1YEtg1vv1gmGSxNCcZ1QyZIPi1AW9/RK
+mwrFAoAAqgRTRdMUhanQoioDCiVEpABApAIiAVPWmAwwNiBGTEYGFiXNVCFRFAsS
+SwSACCHBsp0wi0VjtuNxWZNSwjQEkSEjSwIiUpGBTEYQzwFKsYyIf2VOLHfjPoOb
+M0icFdouz/FAT9r7B/4/+65OyqmMmhIETGGyaDCmWoaGKRBVpkAkalDzgXEWc0gV
+870Sh1UIDSGBp2psk/lT9dv4U66trS1MQgp5GBKiMddzTTfCK+WeFy32iV4imkQy
+Q/+joRu2Q/kMOaGGxeK26wjFkCNNz/ZFoaRIUJQkGYUEtjtqx5hu+wisyCrgx/+G
+1XBJxQAYWBbQoIUIU0yTj54xg5qi35NKmWzwsVCMkEZMVYOIIBFbgGgAWwhCKvhd
+7XJcrq1wnyTMNeN22CFedYwJDQ87tk0OBDMCqVMm+csVyEif8XfljMa0X8tnbb+U
+vaH97fcleD9oKzpxZ3FX+PXpM8HNzefWoforeH3qwrN4+rF6cX/o5vXzBdfTsz+X
+fuhpuq+3nLtyo2U0ffHg8MiTe/O9kxNT1AVHv4bd3AutbeqhnKUVPUM3nOfLyudd
+7d97fCAHl43UOxPY656d+erU9/GNU/PfXLxWJo29zxqYdnj+6rx7mxbdHjiceHBJ
+XmI46Xt+VmR+yVlUtGLnqs3dLyMRl6zqbDrWt6Iz1DunfGpWR97Mg/qnI1Wpa/rb
+5xUdmhjoGiqJNDSWfDwwXJa7srf/Zt3lF2t3BPSN+2rG89X8b93Rd2lDuSdLx7zE
+j76ugo418aPZrY9Xz3w2fus3Hm46Hg==
+=wyUz
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/kanej
+
+==================================================================
