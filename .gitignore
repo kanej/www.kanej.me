@@ -1,10 +1,8 @@
-public/
-themes/
-out/
-target/
-logs/
-.nrepl-port
-.lein-repl-history
-.lein-failures
+# Project dependencies
+.cache
+node_modules
+yarn-error.log
+
+# Build directory
+/public
 .DS_Store
-profiles.clj

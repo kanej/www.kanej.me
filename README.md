@@ -1,20 +1,26 @@
-www.kanej.me website
-====================
+# gatsby-starter-default
+The default Gatsby starter.
 
-Some information about me, pulled together from across the interwebs.
+For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/).
 
-Usage
------
+## Install
 
-The website is built using [Hugo](http://gohugo.io) and deployed to S3 with lein-s3-sync.
-
-To deploy:
-
-```bash
-> hugo # to build the site into ./public
-> lein s3-sync
+Make sure that you have the Gatsby CLI program installed:
+```sh
+npm install --global gatsby-cli
 ```
 
-License
--------
-MIT
+And run from your CLI:
+```sh
+gatsby new gatsby-example-site
+```
+
+Then you can run it by:
+```sh
+cd gatsby-example-site
+gatsby develop
+```
+
+## Deploy
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
