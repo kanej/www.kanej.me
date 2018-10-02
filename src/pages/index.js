@@ -10,7 +10,7 @@ const BrandLink = ({iconName, linkUrl, pretext, linkText}) => (
   }}>
     <p style={{
       marginBottom: '0.25rem'
-    }}><i style={{marginRight: '0.8rem', width: '1rem', textAlign: 'center'}} class={`fab ${iconName}`} />{pretext}<a href={linkUrl}>{linkText}</a></p>
+    }}><i style={{marginRight: '0.8rem', width: '1rem', textAlign: 'center'}} className={`fab ${iconName}`} />{pretext}<a href={linkUrl}>{linkText}</a></p>
   </div>
 )
 
