@@ -1,0 +1,15 @@
+{
+  "name": "kanej-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "typography.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "typography": "^0.16.17",
+    "typography-theme-stern-grove": "^0.15.10"
+  }
+}

@@ -7,4 +7,6 @@ logs/
 .lein-repl-history
 .lein-failures
 .DS_Store
+.cache
+node_modules/
 profiles.clj

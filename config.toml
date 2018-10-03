@@ -1,26 +1,5 @@
-baseurl = "http://www.kanej.me"
-googleAnalytics = "UA-21599577-2"
+baseURL = "http://example.org/"
 languageCode = "en-us"
-theme = "hugo-identity-theme"
-title = "Kanej"
-[params]
-avatar = "teadrinker.jpg"
-background = "bg3.jpg"
-email = "john@kanej.me"
-favicon = "favicon.png"
-name = "John Kane"
-position = "Programmer"
-[params.footer]
-copyright = "2017 John Kane"
-[[params.social]]
-icon = "fa-twitter"
-link = "https://twitter.com/john_kane"
-title = "Twitter"
-[[params.social]]
-icon = "fa-github"
-link = "https://github.com/kanej"
-title = "Github"
-[[params.social]]
-icon = "fa-linkedin"
-link = "https://www.linkedin.com/in/johnkane84"
-title = "Linkedin"
+title = "My New Hugo Site"
+theme = "personal"
+relativeURLs = true
