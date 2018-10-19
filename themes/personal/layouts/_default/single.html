@@ -1,11 +1,13 @@
 {{ define "main" }}
 <main aria-role="main">
 
-    <div style="margin: 0px auto; max-width: 600px; padding: 0px 1.0875rem 1.45rem;">
-        <h2>{{ .Title }}</h2>
+    <article class="article-body">
+        <header>
+            <h2>{{ .Title }}</h2>
+        </header>
         <div>
             {{ .Content }}
         </div>
-    </div>
+    </article>
 </main>
 {{ end }}

@@ -1,0 +1,36 @@
+{{ define "main" }}
+<main aria-role="main">
+
+    <article style="margin: 0px auto; max-width: 960px; padding: 0px 1.0875rem 1.45rem;">
+        <header>
+            <h2>{{ .Title }}</h2>
+        </header>
+
+        <p>In case you wanted slides from a talk I have given, here they are, you poor misguided soul...</p>
+
+    </article>
+    <div style="margin: 0px auto; max-width: 960px; padding: 0px 1.0875rem 1.45rem;">
+            <!-- Ranges through content/talks/*.md -->
+            {{ range .Pages }}
+                <div class="talk-box">
+                    <div class="talk-header">
+                        <h3 style="float: left">{{.Title}}</h3>
+                        
+                        <div style="float: right">
+                            <p>{{.Date.Format "2006-01"}}</p>
+                        </div>
+                    </div>
+                    <div class=talk-venue>
+                        <h5>{{.Params.venue}}</h5>
+                    </div>  
+                    <div class="talk-content">
+                        <p>{{.Content}}</p>
+                    </div>
+                    <div class="talk-links">
+                        <a href="{{.Params.slides}}">slides</a> {{ if (isset .Params "audio") }} | <a href="{{.Params.audio}}">audio</a> {{ end }}
+                    </div>
+                </div>
+            {{ end }}
+    </div>
+</main>
+{{ end }}
