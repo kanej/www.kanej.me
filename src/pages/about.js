@@ -1,26 +1,24 @@
 import React from 'react'
-import { Link, graphql } from 'gatsby'
-
+import { graphql  } from 'gatsby'
 import Layout from '../components/layout'
 
-const AboutPage = ({data}) => {
+export default ({ data }) => {
+  const page = data.markdownRemark
   return (
     <Layout>
-      <div className='content' dangerouslySetInnerHTML={{__html: data.markdownRemark.html}} />
-      <Link to='/'>Back</Link>
+      <h2>{page.frontmatter.title}</h2>
+      <div dangerouslySetInnerHTML={{ __html: page.html }} />
     </Layout>
   )
 }
 
-export default AboutPage
-
 export const query = graphql`
   query {
-    markdownRemark(fileAbsolutePath: {regex : "/about.md/"}) {
+    markdownRemark(fileAbsolutePath: {regex: "/pages\\/about.md/"}) {
       frontmatter {
         title
       }
       html
-    }
+    }    
   }
 `

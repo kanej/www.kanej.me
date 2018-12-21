@@ -1,6 +1,6 @@
 import Typography from 'typography'
-import sterngroveTheme from 'typography-theme-stern-grove'
+import theme from 'typography-theme-stern-grove'
 
-const typography = new Typography(sterngroveTheme)
+const typography = new Typography(theme)
 
 export default typography
