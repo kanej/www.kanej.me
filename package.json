@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "fork-awesome": "^1.1.7",
     "gatsby": "^2.0.33",
     "gatsby-image": "^2.0.15",
     "gatsby-plugin-ipfs": "^2.0.2",
