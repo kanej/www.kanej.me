@@ -1,38 +1,94 @@
-.App {
+.article-body {
+  margin: 0px auto;
+  max-width: 960px;
+  padding: 0px 1.0875rem 1.45rem;
+  margin-bottom: 6rem;
+}
+
+.nav-bar {
+  background: white none repeat scroll 0% 0%;
+  margin-bottom: 1.45rem;
+}
+
+.nav-bar a {
+  color: black;
+  text-decoration: none;
+}
+
+.nav-bar > div {
+  margin: 0px auto;
+  max-width: 960px;
+  padding: 1.45rem 1.0875rem;
+}
+
+.nav-bar .nav-brand {
+  margin: 0px;
+  float: left;
+}
+
+.nav-bar .nav-page-link {
+  margin: 0px;
+  padding-right: 1rem;
+  float: right;
+}
+
+footer {
+  text-align: center;
+  color: lightgrey;
+}
+
+/* Homepage */
+
+.home-page-box {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home-page-avatar {
+  border-radius: 50%;
+  margin-top: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.brand-box {
+  display: inline-block;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.brand-link {
+  margin-top: 0rem;
+  text-align: left;
 }
 
-.App-link {
-  color: #61dafb;
+.brand-link > p {
+  margin-bottom: 0.25rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.brand-link > p > i {
+  margin-right: 0.8rem;
+  width: 1rem;
+  text-align: center;
+}
+
+/* Talks Page */
+
+.talk-box {
+  margin-bottom: 2rem;
+}
+
+.talk-header {
+  height: 2rem;
+}
+
+.talk-header h3 {
+  margin: 0rem;
+}
+
+.talk-content p {
+  margin-bottom: 0.7rem;
+}
+
+.talk-venue h5 {
+  margin: 0rem;
+}
+
+.talk-links a {
+  text-decoration: underline;
 }

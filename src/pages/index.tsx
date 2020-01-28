@@ -6,7 +6,13 @@ const IndexPage: React.FC = () => (
   <main>
     <article className="article-body">
       <div className="home-page-box">
-        <img src={teaDrinker} alt={'Pouring tea'} />
+        <img
+          className="home-page-avatar"
+          src={teaDrinker}
+          alt={'Pouring tea avatar'}
+          width={125}
+          height={125}
+        />
         <h1 style={{ marginTop: '0rem' }}>John Kane</h1>
         <h3 style={{ marginTop: '0rem' }}>Programmer</h3>
         <div className="brand-box">

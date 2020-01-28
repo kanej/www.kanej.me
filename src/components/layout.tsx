@@ -4,7 +4,6 @@ import Helmet from 'react-helmet'
 
 import Header from './header'
 import './googleFonts.css'
-import './layout.css'
 import favicon from '../images/favicon.png'
 
 const Layout: React.FC = ({ children }) => {
@@ -52,7 +51,7 @@ const Layout: React.FC = ({ children }) => {
       </div>
       <footer>
         <p>
-          © 2009-2019 John Kane - made from pure bits I siphoned from a Scottish
+          © 2009-2020 John Kane - made from pure bits I siphoned from a Scottish
           stream
         </p>
       </footer>
