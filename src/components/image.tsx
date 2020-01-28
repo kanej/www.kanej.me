@@ -28,10 +28,13 @@ const Image = () => (
         }
       }
     `}
-    render={data => <Img
-      className='home-page-avatar'
-      alt='Pouring Tea Avatar'
-      fixed={data.file.childImageSharp.fixed} />}
+    render={data => (
+      <Img
+        className="home-page-avatar"
+        alt="Pouring Tea Avatar"
+        fixed={data.file.childImageSharp.fixed}
+      />
+    )}
   />
 )
 export default Image
