@@ -27,13 +27,44 @@ const TalksPage: React.FC = () => {
     {
       node: {
         frontmatter: {
-          title: 'Example',
-          venue: 'exeter',
-          slides: '',
-          audio: 'http:',
-          date: '',
+          title: 'IPFS - Building a peer to peer Web',
+          venue: 'Glasgow JS',
+          slides:
+            'https://ipfs.io/ipfs/QmbLGiQgKpbWv1ZyAGaaeRbFgRh4zrCxPfnzUkFKaHmBhM',
+          audio: undefined,
+          date: new Date('2017-11-01T19:00:48+01:00'),
         },
-        html: 'boom',
+        html:
+          'A general introduction to <a href="https://ipfs.io">IPFS</a> emphasising its permanence, censorship resistance and peer to peer nature.',
+      },
+    },
+    {
+      node: {
+        frontmatter: {
+          title: 'Fixing the Web with the Interplanetary File System',
+          venue: 'TechExeter Conference 2016',
+          slides:
+            'https://ipfs.io/ipfs/QmRoyxuDh1dVHP2ZRBimzSmV6LDZPe5oDzghVtyU2kZs87',
+          audio:
+            'https://soundcloud.com/techexeter/2016-track1-john-kane-fixing-the-web-with-the-ipfs',
+          date: new Date('2016-10-08T10:00:00+01:00'),
+        },
+        html: `<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/289707646&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+
+          An introduction to <a href="https://ipfs.io">IPFS</a> for the TechExeter conference, focussing the problems with HTTP and the need to build out a decentralized web.`,
+      },
+    },
+    {
+      node: {
+        frontmatter: {
+          title: 'Docker',
+          venue: 'Exeter Techmeetup',
+          slides: 'https://slides.com/kanej/docker',
+          audio: undefined,
+          date: new Date('2014-06-20T20:00:48+01:00'),
+        },
+        html:
+          '<a href="https://www.docker.com/">Docker</a> from a web developers standpoint.',
       },
     },
   ]
@@ -56,6 +87,7 @@ const TalksPage: React.FC = () => {
             slides
           </a>
         )
+
         const audioLink = node.frontmatter.audio ? (
           <a
             key={`${node.frontmatter.title}-audio`}
@@ -64,6 +96,7 @@ const TalksPage: React.FC = () => {
             audio
           </a>
         ) : null
+
         const talkLinks = node.frontmatter.audio
           ? [slidesLink, ' | ', audioLink]
           : slidesLink
@@ -74,7 +107,8 @@ const TalksPage: React.FC = () => {
               <h3 style={{ float: 'left' }}>{node.frontmatter.title}</h3>
 
               <div style={{ float: 'right' }}>
-                <p>{node.frontmatter.date}</p>
+                <p>{`${node.frontmatter.date.getFullYear()}-${node.frontmatter.date.getMonth() +
+                  1}`}</p>
               </div>
             </div>
             <div className="talk-venue">

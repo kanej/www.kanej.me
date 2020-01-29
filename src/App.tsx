@@ -1,5 +1,4 @@
 import React from 'react'
-import './App.css'
 import IpfsRouter from 'ipfs-react-router'
 import Layout from './components/layout'
 import { Switch, Route } from 'react-router-dom'
