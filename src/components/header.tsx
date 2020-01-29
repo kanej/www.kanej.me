@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const Header: React.FC<{ siteTitle: string }> = ({ siteTitle }) => (
-  <div className="nav-bar">
+  <header className="nav-bar">
     <div>
       <h3 className="nav-brand">
         <Link to="/">{siteTitle}</Link>
@@ -14,7 +14,7 @@ const Header: React.FC<{ siteTitle: string }> = ({ siteTitle }) => (
         <Link to="/talks">talks</Link>
       </h3>
     </div>
-  </div>
+  </header>
 )
 
 export default Header
