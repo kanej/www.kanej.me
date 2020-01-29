@@ -34,7 +34,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "react-scripts build",
-    "deploy": "scribalous publish ./scribalous -p local"
+    "deploy": "scribalous publish ./scribalous -p pinata"
   },
   "eslintConfig": {
     "extends": "react-app"

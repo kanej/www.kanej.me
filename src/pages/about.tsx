@@ -6,8 +6,8 @@ import html from 'remark-html'
 import slug from 'remark-slug'
 
 const aboutPageQuery = gql`
-  query GET_ABOUT_PAGE {
-    page(slug: "about") {
+  query GET_ABOUT_PAGE($slug: String) {
+    page(slug: $slug) {
       slug
       body
     }
@@ -15,7 +15,9 @@ const aboutPageQuery = gql`
 `
 
 const AboutPage: React.FC = () => {
-  const { loading, error, data } = useQuery(aboutPageQuery)
+  const { loading, error, data } = useQuery(aboutPageQuery, {
+    variables: { slug: 'about' },
+  })
   const [htmlContent, setHtmlContent] = useState<any>(undefined)
 
   useEffect(() => {
@@ -46,8 +48,6 @@ const AboutPage: React.FC = () => {
       </div>
     )
   }
-
-  console.log()
 
   return (
     <div>
