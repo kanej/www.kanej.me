@@ -1,46 +1,62 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
-  "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "name": "www.kanej.me",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://localhost:5000",
+  "homepage": "./",
   "dependencies": {
+    "@scribalous/react-hooks": "^0.1.2",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "@types/jest": "^24.0.0",
+    "@types/node": "^12.0.0",
+    "@types/react": "^16.9.0",
+    "@types/react-dom": "^16.9.0",
     "fork-awesome": "^1.1.7",
-    "gatsby": "^2.0.33",
-    "gatsby-image": "^2.0.15",
-    "gatsby-plugin-ipfs": "^2.0.2",
-    "gatsby-plugin-manifest": "^2.0.5",
-    "gatsby-plugin-offline": "^2.0.11",
-    "gatsby-plugin-react-helmet": "^3.0.0",
-    "gatsby-plugin-sharp": "^2.0.7",
-    "gatsby-plugin-typography": "^2.2.1",
-    "gatsby-source-filesystem": "^2.0.12",
-    "gatsby-transformer-remark": "^2.1.17",
-    "gatsby-transformer-sharp": "^2.1.4",
-    "react": "^16.5.1",
-    "react-dom": "^16.5.1",
-    "react-helmet": "^5.2.0",
-    "react-typography": "^0.16.13",
-    "typography": "^0.16.17",
-    "typography-theme-stern-grove": "^0.15.10"
+    "ipfs-react-router": "^0.2.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^5.2.1",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.3.0",
+    "react-typography": "^0.16.19",
+    "remark": "^11.0.2",
+    "remark-html": "^10.0.0",
+    "remark-slug": "^5.1.2",
+    "typescript": "~3.7.2",
+    "typography": "^0.16.19",
+    "typography-theme-stern-grove": "^0.16.19"
   },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
   "scripts": {
-    "build": "gatsby build --prefix-paths",
-    "develop": "gatsby develop",
-    "start": "npm run develop",
-    "format": "prettier --write \"src/**/*.js\"",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "predeploy": "npm run build",
-    "deploy": "npx @agentofuser/ipfs-deploy -p pinata -d cloudflare public"
+    "start": "concurrently --kill-others \"scribalous preview ./scribalous\" \"react-scripts start\"",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "react-scripts build",
+    "deploy": "scribalous publish ./scribalous -p pinata -d cloudflare"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
   "devDependencies": {
-    "prettier": "^1.14.2"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "@scribalous/ipld-cms": "^0.0.4",
+    "@types/react-helmet": "^5.0.15",
+    "@types/react-router-dom": "^5.1.3",
+    "@types/typography": "^0.16.3",
+    "concurrently": "^5.1.0",
+    "scribalous": "^0.1.0"
   }
 }

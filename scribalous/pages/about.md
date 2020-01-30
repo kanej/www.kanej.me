@@ -1,5 +1,5 @@
 ---
-title: "About"
+slug: 'about'
 date: 2018-10-03T20:54:48+01:00
 ---
 
