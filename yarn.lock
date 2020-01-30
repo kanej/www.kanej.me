@@ -1715,7 +1715,7 @@
   resolved "https://registry.yarnpkg.com/@protobufjs/utf8/-/utf8-1.1.0.tgz#a777360b5b39a1a2e5106f8e858f2fd2d060c570"
   integrity sha1-p3c2C1s5oaLlEG+OhY8v0tBgxXA=
 
-"@scribalous/ipld-cms@*", "@scribalous/ipld-cms@^0.0.4":
+"@scribalous/ipld-cms@^0.0.4":
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/@scribalous/ipld-cms/-/ipld-cms-0.0.4.tgz#93411cf2609d6b39028fc69afbdb029b2fc13006"
   integrity sha512-4f1coliA5hB1Oz+A5D4taQITwjJgUVYB+o0gInVgPAyYHDx7h3VY95F45v6YCoebk1RbKzOZ3jiBGeKNPE2NuQ==
@@ -1727,13 +1727,25 @@
     merkling "^2.0.0-alpha.4"
     uuid "^3.3.3"
 
-"@scribalous/react-hooks@^0.1.0":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@scribalous/react-hooks/-/react-hooks-0.1.1.tgz#33d0c8a388da1165dd3c4413fdda548a9d6a8a44"
-  integrity sha512-6DX1pJzwTpIj8j4AVIycc1iir/+vjnlSBAT4sLIG2pL71QH5P/NS1vX3CTFoatwqrKIgu8XAfx7VqAcGs8oM8A==
+"@scribalous/ipld-cms@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@scribalous/ipld-cms/-/ipld-cms-0.1.0.tgz#407729f409f0108b747ff5f255c80c66c0facb12"
+  integrity sha512-6D9YhQv+XmaMIYWd+3glWitKDC5nj+HlUE2g6DT2AxsLsFT4OO3v33nCAKCY8eiwBTgmAzmitjOkAqkR2COWNA==
+  dependencies:
+    "@types/uuid" "^3.4.6"
+    cids "^0.7.2"
+    front-matter "^3.1.0"
+    ipfs "^0.40.0"
+    merkling "^2.0.0-alpha.4"
+    uuid "^3.3.3"
+
+"@scribalous/react-hooks@^0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@scribalous/react-hooks/-/react-hooks-0.1.2.tgz#5ae886c05c1b31c6f0b5f739434bede36fe6b157"
+  integrity sha512-D4kngy+DX1bVn6/uCWQuIuVf1DiRQjfp0hAI/HR265x51+mCc64BP4TeX8v8yteOIWKWuynWl0cf89Nstnu16g==
   dependencies:
     "@apollo/react-hooks" "^3.1.3"
-    "@scribalous/ipld-cms" "*"
+    "@scribalous/ipld-cms" "^0.1.0"
     "@types/react" "^16.9.13"
     apollo-boost "^0.4.4"
     cids "^0.7.2"
@@ -11766,9 +11778,9 @@ ndjson@^1.5.0, "ndjson@github:hugomrdias/ndjson#feat/readable-stream3":
     split2 "^3.1.0"
     through2 "^3.0.0"
 
-"neat-frame@git+https://github.com/agentofuser/neat-frame.git#wrap-ansi-options":
+"neat-frame@https://github.com/agentofuser/neat-frame#wrap-ansi-options":
   version "1.0.2"
-  resolved "git+https://github.com/agentofuser/neat-frame.git#b244ca11078bd35f63b2d7cb22d5e4b5c12ae2aa"
+  resolved "https://github.com/agentofuser/neat-frame#b244ca11078bd35f63b2d7cb22d5e4b5c12ae2aa"
   dependencies:
     inspect-with-kind "^1.0.5"
     merge-options "^1.0.1"
@@ -11892,22 +11904,6 @@ node-notifier@^5.4.2:
     semver "^5.5.0"
     shellwords "^0.1.1"
     which "^1.3.0"
-
-node-pre-gyp@*:
-  version "0.14.0"
-  resolved "https://registry.yarnpkg.com/node-pre-gyp/-/node-pre-gyp-0.14.0.tgz#9a0596533b877289bcad4e143982ca3d904ddc83"
-  integrity sha512-+CvDC7ZttU/sSt9rFjix/P05iS43qHCOOGzcr3Ry99bXG7VX953+vFyEuph/tfqoYu8dttBkE86JSKBO2OzcxA==
-  dependencies:
-    detect-libc "^1.0.2"
-    mkdirp "^0.5.1"
-    needle "^2.2.1"
-    nopt "^4.0.1"
-    npm-packlist "^1.1.6"
-    npmlog "^4.0.2"
-    rc "^1.2.7"
-    rimraf "^2.6.1"
-    semver "^5.3.0"
-    tar "^4.4.2"
 
 node-pre-gyp@^0.13.0:
   version "0.13.0"
@@ -13898,7 +13894,7 @@ pull-utf8-decoder@^1.0.2:
   resolved "https://registry.yarnpkg.com/pull-utf8-decoder/-/pull-utf8-decoder-1.0.2.tgz#a7afa2384d1e6415a5d602054126cc8de3bcbce7"
   integrity sha1-p6+iOE0eZBWl1gIFQSbMjeO8vOc=
 
-"pull-ws@github:hugomrdias/pull-ws#fix/bundle-size":
+pull-ws@hugomrdias/pull-ws#fix/bundle-size:
   version "3.3.1"
   resolved "https://codeload.github.com/hugomrdias/pull-ws/tar.gz/8e2ce0bb3b1cd6804828316e937fff8e0bef6225"
   dependencies:
@@ -14980,16 +14976,16 @@ schema-utils@^2.0.0, schema-utils@^2.0.1, schema-utils@^2.1.0, schema-utils@^2.2
     ajv "^6.10.2"
     ajv-keywords "^3.4.1"
 
-scribalous@^0.0.8:
-  version "0.0.8"
-  resolved "https://registry.yarnpkg.com/scribalous/-/scribalous-0.0.8.tgz#575120a0ad8e1ef24864685304f6dc6d89b65bd5"
-  integrity sha512-sfbEE65p/vRZhPCwfXqa3t2H7NU6bl4InOhPBzKzuXjEO3CKLwEXGrI7tjHXcb32C7tgBw00vZaRKLweRuhOog==
+scribalous@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/scribalous/-/scribalous-0.1.0.tgz#cf50caacbc847dd206832d20f2998e26caf8ae8b"
+  integrity sha512-aW4An0nuitrsOGOrCs7lofHv1J19J1UOOh3XMcB/n21fvKVBkQPE/VuFr1fldsroK8oXfH90GBKA4T1F7AxWdA==
   dependencies:
     "@oclif/command" "^1"
     "@oclif/config" "^1"
     "@oclif/plugin-help" "^2"
     "@pinata/sdk" "^1.1.3"
-    "@scribalous/ipld-cms" "*"
+    "@scribalous/ipld-cms" "^0.1.0"
     "@types/http-proxy" "^1.17.2"
     apollo-server "^2.9.15"
     apollo-server-express "^2.9.15"
@@ -16015,7 +16011,7 @@ tar-stream@^2.0.0, tar-stream@^2.0.1:
     inherits "^2.0.3"
     readable-stream "^3.1.1"
 
-tar@^4, tar@^4.4.2:
+tar@^4:
   version "4.4.13"
   resolved "https://registry.yarnpkg.com/tar/-/tar-4.4.13.tgz#43b364bc52888d555298637b10d60790254ab525"
   integrity sha512-w2VwSrBoHa5BsSyH+KxEqeQBAllHhccyMFVHtGtdMpF4W7IRWfZjFiQceJPChOeTsSDVUpER2T8FA93pr0L+QA==
