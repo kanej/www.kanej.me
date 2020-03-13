@@ -38,15 +38,19 @@ const Layout: React.FC = ({ children }) => {
         <html lang="en" />
         <link rel="shortcut icon" type="image/png" href={favicon} />
       </Helmet>
-      <div className="page-container">
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <main>{children}</main>
-        <footer>
-          <p>
-            © 2009-2020 John Kane - made from pure bits I siphoned from a
-            Scottish stream
-          </p>
-        </footer>
+      <div>
+        <div className="page-header">
+          <Header siteTitle={data.site.siteMetadata.title} />
+        </div>
+        <div className="page-container">
+          <main>{children}</main>
+          <footer>
+            <p>
+              © 2009-2020 John Kane - made from pure bits I siphoned from a
+              Scottish stream
+            </p>
+          </footer>
+        </div>
       </div>
     </>
   )
